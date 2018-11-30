@@ -113,3 +113,16 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# quick test n debug
+pop.py
+
+#images
+*.jpg
+*.jpeg
+*.gif
+*.png
+*.PNG
+*.JPG
+
+.vscode/
