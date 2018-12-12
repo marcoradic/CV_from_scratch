@@ -23,20 +23,20 @@ def sobel(input_image):
 def laplacian(input_image):
     # todo diagonal neighbour version
     kernel = np.array([[0, -1, 0], [-1, 4, -1], [0, -1, 0]])
-    return convolve2d(input_image, kernel / kernel.sum())
+    return convolve2d(input_image.copy(), kernel / kernel.sum())
 
 
 def bilinear(input_image):
     kernel = np.array([[1, 2, 1], [2, 4, 2], [1, 2, 1]])
-    return convolve2d(input_image, kernel / kernel.sum())
+    return convolve2d(input_image.copy(), kernel / kernel.sum())
 
 
 def box(input_image, kernel_size=5):
     kernel = np.ones((kernel_size, kernel_size))
-    return convolve2d(input_image, kernel / kernel.sum())
+    return convolve2d(input_image.copy(), kernel / kernel.sum())
 
 
-def gaussian_filter(input_image, sigma=1):
+def gaussian_filter(input_image, sigma=2):
     """Convolves an image with a Gaussian
 
     Uses SciPy implementation for now
@@ -49,4 +49,4 @@ def gaussian_filter(input_image, sigma=1):
         np.array -- Gaussian-convolved image
     """
 
-    return scipy.ndimage.gaussian_filter(input_image, sigma)
+    return scipy.ndimage.gaussian_filter(input_image.copy(), sigma)
