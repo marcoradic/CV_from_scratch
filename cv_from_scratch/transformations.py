@@ -39,6 +39,9 @@ def threshold(input_image, threshold):
 def inverse(input_image):
     return input_image.max() - input_image
 
+def normalize(input_image):
+    return input_image / 255.
+
 
 def gaussian_pyramid(input_image, max_layer=4, downscale=2.0):
     pyramid = [input_image]

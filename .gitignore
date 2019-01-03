@@ -124,5 +124,10 @@ pop.py
 *.png
 *.PNG
 *.JPG
+*.gif
+*.GIF
 
 .vscode/
+taxi/
+
+.DS_Store
