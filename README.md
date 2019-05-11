@@ -8,7 +8,7 @@ Implementation of foundational Computer Vision algorithms in Python for educatio
 - Compute Pyramids auf Gaussians & Difference of Gaussians (Laplacian Pyramid)
 - **Optical Flow**: Implementation of Lucas & Kanade method/energy functional for optical flow calculation in image sequences
 
-[Sample from Hamburg Taxi Sequence](ftp://ftp.ira.uka.de/pub/vid-text/image_sequences/taxi/taxi.mpg)
+[Sample from Hamburg Taxi Sequence](http://i21www.ira.uka.de/image_sequences/)
 
 ![Lucas & Kanade Optical Flow](https://raw.githubusercontent.com/marcoradic/CV_from_scratch/master/taxi.gif)
 
